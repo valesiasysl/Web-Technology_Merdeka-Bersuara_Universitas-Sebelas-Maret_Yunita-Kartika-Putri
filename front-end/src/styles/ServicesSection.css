@@ -1,0 +1,231 @@
+/* General Styles for the Services Section */
+.services-section {
+  padding: 2rem 1rem;
+  background-color: #f5f5f5;
+  max-width: 1800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Top Banner Styles */
+.top-banner {
+  background: linear-gradient(135deg, #9e1c1c, #c62828);
+  padding: 2rem 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffdd00, #ff9800);
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.banner-item {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.banner-item:hover {
+  transform: translateY(-5px);
+}
+
+.banner-item:hover img {
+  transform: scale(1.1);
+}
+
+.banner-item img {
+  height: 70px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.banner-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.banner-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Layanan Kami Section Styles */
+.layanan-kami {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.layanan-kami h2 {
+  font-size: 2rem;
+  color: #9e1c1c;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.layanan-kami h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #9e1c1c, #ff9800);
+}
+
+/* Layout for Layanan Cards */
+.layanan-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.layanan-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  width: calc(100% - 2rem);
+  max-width: 220px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.layanan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.layanan-card img {
+  height: 70px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.layanan-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.layanan-card .card-description {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .banner-item {
+    min-width: 200px;
+  }
+  
+  .layanan-card {
+    max-width: 180px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 1rem 0.5rem;
+  }
+  
+  .banner-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .banner-item {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .layanan-cards {
+    gap: 1rem;
+  }
+  
+  .layanan-card {
+    max-width: 160px;
+    min-height: 180px;
+    padding: 1rem;
+  }
+  
+  .layanan-card img {
+    height: 60px;
+  }
+  
+  .layanan-card p {
+    font-size: 1rem;
+  }
+  
+  .layanan-card .card-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .layanan-kami h2 {
+    font-size: 1.5rem;
+  }
+  
+  .layanan-card {
+    max-width: 140px;
+    min-height: 160px;
+  }
+  
+  .layanan-card img {
+    height: 50px;
+  }
+  
+  .banner-item h3 {
+    font-size: 1.2rem;
+  }
+  
+  .banner-item p {
+    font-size: 0.85rem;
+  }
+}

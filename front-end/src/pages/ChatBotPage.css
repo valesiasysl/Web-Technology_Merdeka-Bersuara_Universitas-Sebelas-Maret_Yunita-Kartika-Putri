@@ -1,0 +1,201 @@
+/* General Styles */
+.chatbot-page {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container Styles */
+.chatbot-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+/* Info Section */
+.info-section {
+  flex: 1;
+  background-color: #b71c1c;
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info-card {
+  text-align: left;
+}
+
+.robot-image {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.welcome-message {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Chat Section */
+.chat-section {
+  flex: 2;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 600px; /* Fix height supaya chat-messages bisa scroll */
+}
+
+/* Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  background-color: #b71c1c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px 15px 0 0;
+  user-select: none;
+}
+
+.chatbot-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Chat Messages */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #b71c1c #f0f0f0;
+}
+
+/* Scrollbar styling for Webkit browsers */
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #b71c1c;
+  border-radius: 10px;
+}
+
+/* Messages */
+.message {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  line-height: 1.3;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.message-sent {
+  align-self: flex-end;
+  background-color: #b71c1c;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.message-received {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #333;
+  border-bottom-left-radius: 5px;
+}
+
+.message p {
+  margin: 0;
+}
+
+/* Chat Input */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ececec;
+  background-color: #f9f9f9;
+  border-radius: 0 0 20px 20px;
+  gap: 10px; /* Jarak antara input dan tombol */
+}
+
+.input-field {
+  flex: 1 1 auto;           /* Membuat input melebar sesuai ruang */
+  min-width: 0;             /* Penting di flexbox agar tidak overflow */
+  padding: 12px 20px;       /* Padding lebih besar nyaman diketik */
+  border: 1.5px solid #ddd; /* Border tebal agar jelas */
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;          /* Ukuran font agar jelas terbaca */
+  color: #222;              /* Warna teks kontras */
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-field::placeholder {
+  color: #999;              /* Placeholder lebih terang */
+  font-style: italic;
+}
+
+.input-field:focus {
+  border-color: #b71c1c;
+  box-shadow: 0 0 8px rgba(183, 28, 28, 0.5);
+}
+
+.send-button {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.send-button:hover,
+.send-button:focus {
+  background-color: #7f1212;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .chatbot-container {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  .chat-section {
+    height: 500px;
+  }
+  .info-section {
+    padding: 20px;
+  }
+}

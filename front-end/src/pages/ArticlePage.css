@@ -1,0 +1,139 @@
+/* General Styles */
+.article-page {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Article Container */
+  .article-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .article-content {
+    padding: 20px;
+  }
+  
+  .article-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .article-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #b71c1c;
+  }
+  
+  .article-text {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  /* ArticlePage Styles */
+.article-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding: 20px;
+  background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+}
+
+/* Article Container */
+.article-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Image Styling */
+.article-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+/* Content Styling */
+.article-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.7;
+  padding: 10px;
+}
+
+.article-date {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.article-title {
+  font-size: 2em;
+  color: #b71c1c;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.article-text {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .article-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .article-content {
+    padding: 20px;
+  }
+
+  .article-title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-title {
+    font-size: 1.5em;
+  }
+
+  .article-text {
+    font-size: 1em;
+  }
+}

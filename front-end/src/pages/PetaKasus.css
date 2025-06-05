@@ -1,0 +1,345 @@
+/* Reset and Base Styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f8fafc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.peta-kasus-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 120px);
+}
+
+/* Hero Section */
+.hero {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.hero-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  color: #1a3d7c;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.hero h1 .icon-title {
+  color: #2a6fdb;
+}
+
+/* Year Selector */
+.year-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3d7c;
+}
+
+.year-selector select {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.year-selector select:hover,
+.year-selector select:focus {
+  border-color: #2a6fdb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 111, 219, 0.1);
+}
+
+/* Description */
+.description {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #4b5563;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* Stats Container */
+.stats-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.total-cases {
+  background: #f0f7ff;
+  border-radius: 12px;
+  padding: 15px 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(42, 111, 219, 0.1);
+  border: 1px solid #dbeafe;
+}
+
+.total-label {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.total-number {
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: #2a6fdb;
+}
+
+/* Main Content Layout */
+.container-map-chart-legend {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.map-section {
+  flex: 1 1 600px;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: relative;
+}
+
+.legend-chart-section {
+  flex: 1 1 350px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Legend Styles */
+.legend-section h3 {
+  font-size: 1.2rem;
+  color: #1a3d7c;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.legend-circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.legend-circle.high {
+  background-color: #ff4c4c;
+}
+
+.legend-circle.medium {
+  background-color: #ffcc00;
+}
+
+.legend-circle.low {
+  background-color: #4caf50;
+}
+
+/* Info Section */
+.info-section {
+  margin: 20px 0;
+}
+
+.info-section h3 {
+  font-size: 1.2rem;
+  color: #ffffff; /* Change color to white */
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 0.95rem;
+  color: #ffffff; /* Change color to white */
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+
+/* Chart Section */
+.chart-section {
+  margin: 20px 0;
+}
+
+.chart-section h3 {
+  font-size: 1.2rem;
+  color: #1a3d7c;
+  margin-bottom: 15px;
+}
+
+.chart-container {
+  height: 250px;
+  width: 100%;
+}
+
+/* Source Section */
+.source-section {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.source-section h3 {
+  font-size: 1.2rem;
+  color: #1a3d7c;
+  margin-bottom: 10px;
+}
+
+.source-link {
+  color: #2a6fdb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.source-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Popup Styles */
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  padding: 0;
+}
+
+.custom-popup .leaflet-popup-content {
+  margin: 0;
+  padding: 12px;
+}
+
+.popup-content {
+  padding: 8px;
+}
+
+.popup-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  color: #1a3d7c;
+}
+
+.popup-content p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+}
+
+.popup-note {
+  font-size: 0.8rem !important;
+  color: #6b7280 !important;
+  font-style: italic;
+  margin-top: 10px !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .container-map-chart-legend {
+    flex-direction: column;
+  }
+  
+  .map-section {
+    min-height: 500px;
+  }
+  
+  .legend-chart-section {
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .year-selector {
+    justify-content: space-between;
+  }
+  
+  .description {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .map-section {
+    min-height: 400px;
+  }
+  
+  .legend-chart-section {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .peta-kasus-page {
+    padding: 15px;
+  }
+  
+  .hero {
+    padding: 16px;
+  }
+  
+  .total-cases {
+    padding: 12px 20px;
+  }
+  
+  .legend-chart-section {
+    gap: 16px;
+  }
+}

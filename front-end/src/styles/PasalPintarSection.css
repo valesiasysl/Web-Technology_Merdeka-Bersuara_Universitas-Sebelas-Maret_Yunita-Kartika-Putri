@@ -1,0 +1,175 @@
+/* Pasal Pintar Section Styles - Optimized */
+.pasal-pintar-section {
+  background: linear-gradient(135deg, #fefefe 0%, #f6f6f6 100%);
+  padding: 5rem 2rem;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  position: relative;
+}
+
+.robot-container {
+  flex: 1 1 300px;
+  min-width: 250px;
+  text-align: center;
+  order: 1;
+}
+
+.robot-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.text-container {
+  flex: 2 1 500px;
+  min-width: 300px;
+  padding: 0 1rem;
+  order: 2;
+}
+
+.text-container h2 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #b71c1c;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.text-container p {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.coba-sekarang-btn {
+  padding: 0.8rem 1.8rem;
+  background: linear-gradient(90deg, #b71c1c 0%, #d32f2f 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(183, 28, 28, 0.2);
+  display: inline-block;
+}
+
+.coba-sekarang-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(183, 28, 28, 0.3);
+}
+
+.small-robot-container {
+  flex: 1 1 150px;
+  min-width: 120px;
+  text-align: center;
+  order: 3;
+  align-self: flex-end;
+}
+
+.small-robot-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Decorative elements */
+.decoration-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(183, 28, 28, 0.05);
+}
+
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  bottom: -30px;
+  right: -30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .content-wrapper {
+    justify-content: center;
+  }
+  
+  .text-container {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .small-robot-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .pasal-pintar-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .robot-container {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .text-container {
+    order: 2;
+  }
+  
+  .text-container p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pasal-pintar-section {
+    padding: 2rem 1rem;
+  }
+  
+  .robot-image {
+    max-width: 250px;
+  }
+  
+  .coba-sekarang-btn {
+    width: 100%;
+    padding: 0.8rem;
+  }
+}

@@ -1,0 +1,99 @@
+/* Footer Styling */
+.footer {
+  background-color: #a30707;
+  color: #fff;
+  padding: 40px 80px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.footer-logo {
+  height: 210px; /* Increased height for a larger logo */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+.footer-columns {
+  display: flex;
+  gap: 40px;
+  flex: 2;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  text-align: left;
+  flex: 1;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffccbc;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #ffccbc;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #ffccbc;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ffccbc;
+}
+
+/* Mobile and Tablet Styles */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo-section {
+    margin-bottom: 30px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
