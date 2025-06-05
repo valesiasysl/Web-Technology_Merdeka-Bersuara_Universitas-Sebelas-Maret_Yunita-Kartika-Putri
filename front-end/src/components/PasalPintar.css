@@ -1,0 +1,40 @@
+.pasal-pintar {
+    padding: 80px 100px;
+    background-color: #ffebee;
+    text-align: center;
+  }
+  
+  .pasal-pintar h2 {
+    font-size: 36px;
+    color: #b71c1c;
+    margin-bottom: 30px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .content img {
+    height: 120px;
+  }
+  
+  .text-content {
+    max-width: 500px;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-content button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+  }
+  

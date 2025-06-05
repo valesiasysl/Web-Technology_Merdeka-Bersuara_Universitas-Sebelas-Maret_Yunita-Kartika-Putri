@@ -1,0 +1,361 @@
+/* Consultation.css */
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.consultation-container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.consultation-header {
+  background: linear-gradient(135deg, #940303 0%, #7e0f05 100%);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.consultation-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.header-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
+.primary-button, .secondary-button {
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.primary-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.primary-button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+.secondary-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Benefits Section */
+.benefits-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.benefits-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  margin-bottom: 1rem;
+  color: #1e3c72;
+}
+
+/* Consultants Section */
+.consultants-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #666;
+}
+
+.consultants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.consultant-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.consultant-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.consultant-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.consultant-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.availability-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.unavailable {
+  background-color: #f44336;
+  color: white;
+}
+
+.consultant-details {
+  padding: 1.5rem;
+}
+
+.consultant-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #a92112;
+}
+
+.specialization {
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.consultant-bio {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  background: none;
+  border: none;
+  color: #821800;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.consultant-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.email-button {
+  flex: 1;
+  padding: 0.8rem;
+  background-color: #ab0606;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #2a5298;
+}
+
+.email-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: #1e3c72;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Footer */
+.consultation-footer {
+  padding: 2rem;
+  background-color: #1e3c72;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .consultation-header h1 {
+    font-size: 2rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1rem;
+  }
+  
+  .consultant-image {
+    height: 200px;
+  }
+  
+  .consultants-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-header {
+    padding: 3rem 1rem;
+  }
+  
+  .header-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .primary-button, .secondary-button {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
